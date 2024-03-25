@@ -1,0 +1,132 @@
+body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #121715ff;
+    color: #fceeeeff;
+    line-height: 1.5;
+    min-width: 290px;
+    margin-top: 0;;
+}
+
+a {
+    color: #c1717bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #b82840ff;
+}
+
+/* Navigation */
+
+#navbar {
+    display: block;
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: #fceeeeff;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 1rem;
+    margin-left: 0.625rem;
+}
+
+#navbar header {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding: 0.5rem 0 1rem 0;
+}
+
+#navbar a {
+    display: block;
+    font-size: 1.2rem;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    padding: 0.5rem 0;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        text-align: center;
+    }
+
+    #navbar li {
+        padding: 0;
+    }
+}
+
+/* Main */
+
+#main-doc {
+    position:absolute; 
+    margin-left: 305px;
+}
+
+#main-doc header {
+    font-size: 1.8rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-top: 1px solid #fceeeeff;
+    border-bottom: 1px solid #fceeeeff;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+    #main-doc {
+        position: relative;
+        margin-top: 275px;
+        margin-left: 0px;
+    }
+}
+
+article {
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+code {
+    display: block;
+    white-space: pre-line;
+    position: relative;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Noto Sans Mono", monospace;
+    background-color: #163250ff;
+    border-radius: 1.5rem;
+}
+
+.code {
+    background-color: #163250ff;
+}
